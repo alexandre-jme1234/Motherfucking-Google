@@ -1,0 +1,237 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px 20px 20px;
+}
+
+body{
+    background-color: rgb(67, 67, 67);
+    margin: 0;
+    padding: 0;
+    height: 700px;
+    font-family: Helvetica, sans-serif;
+}
+
+header .left, header .right{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header .right img{
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+header .right p.user{
+    font-size: 30px;
+    margin-top: 2px;
+    color: #595959;
+}
+
+header p{
+    margin-right: 10px;
+    color: rgb(228, 228, 228);
+    cursor: pointer;
+}
+
+header p:hover{
+    color: rgb(136, 136, 136);
+}
+
+/* Partie principale */
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.main .sabre-lazer{
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+    font-size: 40px;
+}
+
+.main .form-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 40%;
+}
+
+.main .form-group input{
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 50px;
+    border: 1px solid white;
+    width: 100%;
+    max-width: 300px;
+}
+
+.main .form-group input:hover, .main .form-group input:focus{
+    background-color: #f3d9f8;
+    -webkit-box-shadow: -9px 1px 87px -13px rgba(241,178,252,1);
+    -moz-box-shadow: -9px 1px 87px -13px rgba(241,178,252,1);
+    box-shadow: -9px 1px 87px -13px rgba(241,178,252,1);
+}
+
+
+.main .form-group label i{
+    float: inline-start;
+    position: absolute;
+    font-size: 25px;
+    margin-left: -45px;
+    margin-top: 30px;
+    color: #50055D;
+}
+
+button{
+    display: inline-block;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+    width: 140px;
+    transition: all 0,5s;
+    cursor: pointer;
+    margin: 8px;
+    margin-top: 25px;
+}
+
+button:hover, button:focus{
+    display: inline-block;
+    background-color: rgb(252, 223, 255);
+    border-radius: 8px;
+    border: 1px solid #db0dff;
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+    width: 140px;
+    transition: all 0,5s;
+    cursor: pointer;
+    margin: 8px;
+    margin-top: 25px;
+}
+.footer{
+    display: flex;
+    background-color: rgb(47, 47, 47);
+    margin-top: 100px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer a{
+    padding: 10px;
+    color: whitesmoke;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer a:hover, .footer a:focus{
+    padding: 10px;
+    color: rgb(187, 187, 187);
+    font-size: 14px;
+    text-decoration: none;
+
+}
+
+.footer #French-Shees{
+    align-self: flex-start;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    width: 100%;
+    color: grey;
+}
+
+.footer .footer-ligne{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer .footer-ligne1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.footer .footer-ligne2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.lightsaber .hilt {
+    cursor: pointer;
+    width: 15px;
+    height: 50px;
+    border-bottom: solid 4px grey;
+    border-top: solid 5px grey;
+    border-radius: 5px;
+    z-index: 1;
+    background: #e2e2e2;
+    background: linear-gradient(to right, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%);
+  }
+  .lightsaber .hilt > .switch {
+    background: #b94a37;
+    width: 3px;
+    height: 10px;
+    position: absolute;
+    bottom: 25px;
+    left: 13px;
+    border-radius: 10px;
+  }
+  .lightsaber .hilt:active + .plasma {
+    transform: scale(1, 1);
+  }
+  .lightsaber .hilt:active > .switch {
+    transform: scale(0.7, 1);
+  }
+  
+  .lightsaber .plasma {
+    transition: transform 300ms;
+    border-radius: 12px 12px 0 0;
+    position: absolute;
+    bottom: 45px;
+    left: 2px;
+    width: 10px;
+    display: block;
+    transform: scale(1, 0);
+    height: 250px;
+    transform-origin: bottom center;
+    z-index: -1;
+    filter: blur(1px);
+  }
+  
+  .vader {
+    background: linear-gradient(to right, #e51115 0%, #fefefe 30%, #fefefe 47%, #fefefe 71%, #e51115 100%);
+    box-shadow: 0 0 10px #e51115;
+  }
+  
+  body {
+    background: #333;
+  }
+  
+  .lightsaber-example {
+    display: flex;
+    justify-content: center;
+    padding-top: 325px;
+  }
+  
+  .lightsaber {
+    position: relative;
+  }
